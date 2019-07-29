@@ -30,15 +30,15 @@ export default class App extends React.Component {
           style={{
             backgroundColor: '#eee',
             width: '100%',
-            height: 50
+            height: 50,
           }}
-          rippleColor='red'>
+          rippleColor={'red'}>
           <Text>Press Touchable!</Text>
         </Touchable>
         
         
         <CircularTouchable
-            rippleColor='green'
+            rippleColor={'green'}
             size={80}
             onPress={() => alert('Circular Touchable Pressed!')}>
             <Text>Press Circular Touchable!</Text>

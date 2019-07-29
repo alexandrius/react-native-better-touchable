@@ -1,16 +1,20 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Touchable from 'react-native-platform-touchable';
+import { Touchable } from 'react-native-better-touchable';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Touchable
-          onPress={() => alert('hello!')}
-          style={{ backgroundColor: '#eee', padding: 30 }}
-          background={Touchable.Ripple('pink', false)}>
-          <Text>Hello there!</Text>
+          onPress={() => alert('Better Touchable Pressed!')}
+          style={{
+            backgroundColor: '#eee',
+            width: '100%',
+            height: 50,
+          }}
+          rippleColor={'red'}>
+          <Text>Press Touchable!</Text>
         </Touchable>
       </View>
     );
