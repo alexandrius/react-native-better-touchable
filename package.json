@@ -2,7 +2,7 @@
   "name": "react-native-better-touchable",
   "version": "0.0.2",
   "description": "Uses TouchableNativeFeedback on Android SDK >21 and TouchableOpacity for iOS and Android SDK <21",
-  "main": "PlatformTouchable.js",
+  "main": "BetterTouchable.js",
   "scripts": {
     "lint": "eslint .",
     "prettier": "eslint . --fix"
