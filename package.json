@@ -1,6 +1,6 @@
 {
   "name": "react-native-better-touchable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Uses TouchableNativeFeedback on Android SDK >21 and TouchableOpacity for iOS and Android SDK <21",
   "main": "PlatformTouchable.js",
   "scripts": {
@@ -14,10 +14,14 @@
     "react-native",
     "react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrius/react-native-better-touchable"
+  },
   "author": "Alexander Pataridze <s.pataridze@gmailcom>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.1.1",
+    "eslint": "^6.1.0",
     "eslint-config-react-native-prettier": "^1.0.1"
   }
 }
