@@ -1,6 +1,8 @@
 import React from "react";
 import { TouchableOpacity, View, Platform, Pressable } from "react-native";
 
+import splitContainerChildStyle from "./splitContainerChildStyle";
+
 function Touchable({
   style,
   children,
