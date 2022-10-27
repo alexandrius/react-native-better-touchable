@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export function splitContainerChildStyle(style) {
+export default function splitContainerChildStyle(style) {
   const innerStyle = { ...StyleSheet.flatten(style) };
   const outerStyle = {};
 
