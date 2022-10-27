@@ -1,14 +1,15 @@
 {
   "name": "react-native-better-touchable",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Uses TouchableNativeFeedback on Android SDK >21 and TouchableOpacity for iOS and Android SDK <21",
-  "main": "BetterTouchable.js",
+  "main": "Touchable.js",
   "scripts": {
     "lint": "eslint .",
     "prettier": "eslint . --fix"
   },
   "files": [
-    "BetterTouchable.js"
+    "Touchable.js",
+    "splitContainerChildStyle.js"
   ],
   "keywords": [
     "react-native",
