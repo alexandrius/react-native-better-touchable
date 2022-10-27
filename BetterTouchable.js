@@ -1,33 +1,5 @@
 import React from "react";
-import {
-  TouchableNativeFeedback,
-  TouchableOpacity,
-  View,
-  StyleSheet,
-  Platform,
-} from "react-native";
-import splitContainerChildStyle from "./splitContainerChildStyle";
-
-const OUTER_STYLES = [
-  { key: "margin", remove: true },
-  { key: "marginHorizontal", remove: true },
-  { key: "marginVertical", remove: true },
-  { key: "marginBottom", remove: true },
-  { key: "marginTop", remove: true },
-  { key: "marginLeft", remove: true },
-  { key: "marginRight", remove: true },
-  { key: "borderRadius", remove: false },
-  { key: "width", remove: false },
-  { key: "height", remove: false },
-  { key: "position", remove: true },
-  { key: "top", remove: true },
-  { key: "left", remove: true },
-  { key: "right", remove: true },
-  { key: "top", remove: true },
-  { key: "bottom", remove: true },
-  { key: "zIndex", remove: true },
-  { key: "flex", remove: true },
-];
+import { TouchableOpacity, View, Platform, Pressable } from "react-native";
 
 function Touchable({
   style,
@@ -43,9 +15,8 @@ function Touchable({
 
     return (
       <View style={outerStyle}>
-        <TouchableNativeFeedback
-          useForeground={TouchableNativeFeedback.canUseNativeForeground()}
-          background={TouchableNativeFeedback.Ripple(rippleColor)}
+        <Pressable
+          android_ripple={{ color: rippleColor, foreground: true }}
           onPress={onPress}
         >
           <View
@@ -54,7 +25,7 @@ function Touchable({
           >
             {children}
           </View>
-        </TouchableNativeFeedback>
+        </Pressable>
       </View>
     );
   }
