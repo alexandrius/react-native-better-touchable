@@ -1,6 +1,6 @@
 {
   "name": "react-native-better-touchable",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Uses TouchableNativeFeedback on Android SDK >21 and TouchableOpacity for iOS and Android SDK <21",
   "main": "Touchable.js",
   "scripts": {

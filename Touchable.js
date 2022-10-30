@@ -9,6 +9,7 @@ function Touchable({
   onPress,
   rippleColor,
   enablePointerEvents = false,
+  ...rest
 }) {
   if (Platform.OS === "android") {
     const { innerStyle, outerStyle } = splitContainerChildStyle(style);
@@ -20,6 +21,7 @@ function Touchable({
         <Pressable
           android_ripple={{ color: rippleColor, foreground: true }}
           onPress={onPress}
+          {...rest}
         >
           <View
             style={innerStyle}
@@ -33,7 +35,7 @@ function Touchable({
   }
 
   return (
-    <TouchableOpacity {...{ onPress, style }}>{children}</TouchableOpacity>
+    <TouchableOpacity {...{ onPress, style }} {...rest}>{children}</TouchableOpacity>
   );
 }
 
