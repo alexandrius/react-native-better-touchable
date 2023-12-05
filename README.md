@@ -60,8 +60,3 @@ export default class App extends React.Component {
 ### CircularTouchable
 Same as above plus
 - `size` - Size of the circle
-
-
-## Hire us
-
-Message us at hello@4twiggers.com
